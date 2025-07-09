@@ -16,7 +16,6 @@ class TaskService:
         self._repository = repository
 
     async def create_task(self, description: str) -> Task:
-        # Execute blocking DB operation synchronously.
         return self._repository.add(description)
 
     async def get_task(self, task_id: int) -> Task:
