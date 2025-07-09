@@ -80,6 +80,13 @@ tests/             # AAA-style test-suite
                 │                              ▲
                 │ (sync)                       │ implements
                 ▼                              │
+          ┌────────────────┐                   │
+          │    Domain      │                   │
+          │   (Task)       │                   │
+          └────────────────┘                   │
+                │                              │
+                │ (sync)                       │
+                ▼                              │
           ┌──────────────────────────┐         │
           │  SQLiteTaskRepository    │─────────┘
           └──────────────────────────┘
